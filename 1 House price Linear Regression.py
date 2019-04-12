@@ -63,3 +63,9 @@ print(sc_X.inverse_transform(X))
 print()
 print(sc_y.inverse_transform(y_pred).round(0))
 
+# In[7]:
+
+
+import matplotlib.pyplot as plt
+plt.scatter(sc_X.inverse_transform(X),sc_y.inverse_transform(y_pred))
+plt.scatter(sc_X.inverse_transform(X),sc_y.inverse_transform(y))
